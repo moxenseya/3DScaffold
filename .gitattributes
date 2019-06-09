@@ -1,0 +1,4 @@
+*.TIF filter=lfs diff=lfs merge=lfs -text
+*.stl filter=lfs diff=lfs merge=lfs -text
+*.COM filter=lfs diff=lfs merge=lfs -text
+*.AIM filter=lfs diff=lfs merge=lfs -text
