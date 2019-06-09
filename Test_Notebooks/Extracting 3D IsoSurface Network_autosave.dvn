@@ -1,0 +1,130 @@
+[connections/7]
+connection_type = 1
+output_idx = 0
+target_instance_name = dvm4
+input_idx = 0
+source_instance_name = dvm3
+
+[connections/6]
+connection_type = 1
+output_idx = 0
+target_instance_name = dvm3
+input_idx = 1
+source_instance_name = dvm1
+
+[connections/5]
+connection_type = 1
+output_idx = 0
+target_instance_name = dvm7
+input_idx = 0
+source_instance_name = dvm6
+
+[connections/4]
+connection_type = 5
+output_idx = 0
+target_instance_name = dvm1
+input_idx = 2
+source_instance_name = dvm7
+
+[connections/3]
+connection_type = 1
+output_idx = 0
+target_instance_name = dvm8
+input_idx = 0
+source_instance_name = dvm7
+
+[connections/2]
+connection_type = 5
+output_idx = 0
+target_instance_name = dvm1
+input_idx = 1
+source_instance_name = dvm4
+
+[connections/1]
+connection_type = 1
+output_idx = 0
+target_instance_name = dvm5
+input_idx = 0
+source_instance_name = dvm4
+
+[connections/0]
+connection_type = 1
+output_idx = 0
+target_instance_name = dvm6
+input_idx = 0
+source_instance_name = dvm5
+
+[connections/9]
+connection_type = 5
+output_idx = 0
+target_instance_name = dvm1
+input_idx = 0
+source_instance_name = dvm9
+
+[general]
+export = False
+
+[connections/8]
+connection_type = 1
+output_idx = 0
+target_instance_name = dvm3
+input_idx = 0
+source_instance_name = dvm2
+
+[connections/10]
+connection_type = 1
+output_idx = 0
+target_instance_name = dvm2
+input_idx = 0
+source_instance_name = dvm9
+
+[modules/dvm7]
+module_name = modules.vtk_basic.vtkQuadricDecimation
+module_config_dict = {'_theFilter': [[('AbortExecuteOn', 0), ('AttributeErrorMetricOn', 0), ('DebugOn', 0), ('NormalsAttributeOn', 1), ('ReleaseDataFlagOn', 0), ('ScalarsAttributeOn', 1), ('TCoordsAttributeOn', 1), ('TensorsAttributeOn', 1), ('VectorsAttributeOn', 1)], [], [('NormalsWeight', 0.10000000000000001), ('Progress', 1.0), ('ProgressText', 'Processing.'), ('ScalarsWeight', 0.10000000000000001), ('TCoordsWeight', 0.10000000000000001), ('TargetReduction', 0.90000000000000002), ('TensorsWeight', 0.10000000000000001), ('VectorsWeight', 0.10000000000000001)]]}
+glyph_position = (-218.93464420471173, -352.86135291336086)
+
+[modules/dvm6]
+module_name = modules.filters.wsMeshSmooth
+module_config_dict = {'numberOfIterations': 20, 'non_manifold_smoothing': False, 'passBand': 0.10000000000000001, 'boundarySmoothing': True, 'featureEdgeSmoothing': False}
+glyph_position = (-215.94524855684745, -212.93704953710014)
+
+[modules/dvm5]
+module_name = modules.filters.contour
+module_config_dict = {'iso_value': 0.5}
+glyph_position = (-214.69244095527358, -86.766720747128716)
+
+[modules/dvm4]
+module_name = modules.filters.closing
+module_config_dict = {'kernelSize': (3, 3, 3)}
+glyph_position = (-260.15071277805652, 106.60491511437363)
+
+[modules/dvm3]
+module_name = modules.filters.seedConnect
+module_config_dict = {'inputConnectValue': 1, 'outputConnectedValue': 1, 'outputUnconnectedValue': 0}
+glyph_position = (-332.04168127437634, 289.34019750813735)
+
+[modules/dvm2]
+module_name = modules.filters.doubleThreshold
+module_config_dict = {'lowerThreshold': 67.0, 'upperThreshold': 200.0, 'replaceOut': 1, 'outputScalarType': -1, 'replaceIn': 1, 'outValue': 0.0, 'inValue': 1.0}
+glyph_position = (-699.27646453369675, 301.6466681415929)
+
+[modules/dvm1]
+module_name = modules.viewers.slice3dVWR
+module_config_dict = {'boundsForPoints': (-0.01058335043489933, 21.664117813110352, -0.01058335043489933, 21.664117813110352, 0.0, 17.150000000000002), 'savedPoints': [{'discrete': (610.0, 254.0, 150.0), 'lockToSurface': False, 'name': u'', 'value': 129.0, 'world': (12.911666666666667, 5.3763333333333332, 7.5)}], 'implicitsState': []}
+glyph_position = (-980.300197426821, -385.59890782845474)
+
+[modules/dvm0]
+module_name = modules.readers.TIFFReader
+module_config_dict = {'first_slice': 1, 'spacing': (0.021166666666666667, 0.021166666666666667, 0.050000000000000003), 'file_pattern': 'C:\\Users\\syeda\\Desktop\\Thesis Work\\3DScaffold\\img\\C0009719_%04d.TIF', 'last_slice': 344, 'file_lower_left': False}
+glyph_position = (-935.24691109598405, 305.63162954390754)
+
+[modules/dvm9]
+module_name = modules.readers.pngRDR
+module_config_dict = {'fileLowerLeft': False, 'lastSlice': 344, 'spacing': (0.0211667, 0.0211667, 0.050000000000000003), 'firstSlice': 1, 'filePattern': 'C:\\Users\\syeda\\Desktop\\Thesis Work\\3DScaffold\\Outputs\\Bilateral_Filtered_Otsu_Output\\slice(%d) .png'}
+glyph_position = (-930.90268169641877, 72.187847413481464)
+
+[modules/dvm8]
+module_name = modules.writers.stlWRT
+module_config_dict = {'filename': 'C:\\Users\\syeda\\Desktop\\Thesis Work\\3DScaffold\\3D_Reconstructed_Bone.stl'}
+glyph_position = (-115.96382468112984, -475.37498985232622)
+
