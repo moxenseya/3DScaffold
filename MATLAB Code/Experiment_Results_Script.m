@@ -1,44 +1,40 @@
 global RAW_IMAGE_ARRAY;
-%global RAW_WINDOW;
 global IMAGE_ARRAY_DOWNSIZED;
 global FILTER_FLAG;
-
-
-%global IMAGE_ARRAY_DOWNSIZED;
-%global FILTER_WINDOW;
 global FILTERED_IMAGE_ARRAY;
 global FULL_IMAGE_ARRAY_FILTERED;
-%global RAW_IMAGE_ARRAY;
-%global SLICE_SLIDER_VALUE;
-%global FILTER_FLAG;
-
-
-%global RAW_IMAGE_ARRAY;
 global BONE_PROJECTION;
 global HOLE_PROJECTION;
 global IMG_DATA_DB_ROT3;
+global IMG_DATA_DB_ROT3_FULL;
+global THICKNESS_ESTIMATE;
+
+
+%global IMG_DATA_DB_ROT3_FULL;
 %global FILTERED_IMAGE_ARRAY;
 %global FULL_IMAGE_ARRAY_FILTERED;
 %global FILTER_FLAG;
-global IMG_DATA_DB_ROT3_FULL;
-
-
+%global RAW_IMAGE_ARRAY;
 %global IMG_DATA_DB_ROT3;
-global THICKNESS_ESTIMATE;
-%global IMG_DATA_DB_ROT3_FULL;
-
 %global THICKNESS_ESTIMATE;
 %global IMG_DATA_DB_ROT3_FULL;
 %global IMG_DATA_DB_ROT3;
+%global RAW_IMAGE_ARRAY;
+%global SLICE_SLIDER_VALUE;
+%global FILTER_FLAG;
+%global RAW_WINDOW;
+%global IMAGE_ARRAY_DOWNSIZED;
+%global FILTER_WINDOW;
+
 
 %Step 1: Image Acquisition
 
 Input_directory_path = uigetdir(pwd,'Select folder containing CT-Scan Slices');
 Input_directory = dir(strcat(Input_directory_path, '\*.TIF'));
 
-% disp (['Selected directory is: ', Input_directory_path]);
+disp (['Selected directory is: ', Input_directory_path]);
 
-%    disp(['Input Directory has ', num2str(length(Input_directory)), ' Slices']);
+disp(['Input Directory has ', num2str(length(Input_directory)), ' Slices']);
 
 %%% Initialize the array using zeros based on the size of the images.
 
@@ -53,7 +49,7 @@ FileName=Input_directory(1).name;
 temp =imread(strcat(relativepath(Input_directory_path), FileName));
 RAW_IMAGE_ARRAY = zeros(size(temp,1),size(temp,2), length(Input_directory));
 
-%disp('Creating slices volume... ');
+disp('Creating slices volume... ');
 
 
 %d = uiprogressdlg(app.ScaffoldUIFigure,'Title','Please Wait',...
@@ -78,7 +74,7 @@ disp('Slices volume created successfully!');
 % definput = {num2str(5)};
 % downscaling_factor = inputdlg(prompt,dlgtitle,dims,definput);
 
-downscaling_factor=1;
+downscaling_factor="1";
 
 % if(isempty(downscaling_factor))
 %     uialert(app.ScaffoldUIFigure,'Please provide a downscaling value','No Input Provided!','Icon','warning');
@@ -246,9 +242,9 @@ if(exist('STL_Outputs\','dir'))
     %  disp('WARNING: Output folder exists. New outputs will overwrite old data!');
     
 else
-    %disp('No output folder found, creating folder now... ');
+    disp('No output folder found, creating folder now... ');
     mkdir('STL_Outputs');
-    %  disp('Output folder created!');
+    disp('Output folder created!');
     
 end
 
@@ -373,7 +369,7 @@ disp('Writing scaffold volume to disk... ');
 %     'Message','Writing scaffold volume to disk... ','Indeterminate','on');
 
 
-stlwrite('STL_Outputs\scaffold_volume.stl',isosurface_of_hole_volume);
+stlwrite('..\STL_Outputs\scaffold_volume.stl',isosurface_of_hole_volume);
 % d.close();
 
 disp('Scaffold STL written to disk! Find it in STL_Outputs Folder!');
