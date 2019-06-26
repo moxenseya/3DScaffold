@@ -350,14 +350,15 @@ disp('Scaffold volume created!');
 
 disp('Creating isosurface of scaffold... ');
 
-%figure, imshow(final_hole_volume(:,:,20),[])
+figure, imshow(final_hole_(:,:,150),[])
 
 isosurface_of_hole_caps = isocaps(final_hole_volume,.5);
 isosurface_of_hole_wall = isosurface(final_hole_volume,.5);
 
 isosurface_of_hole_volume = isosurface_of_hole_wall;
 isosurface_of_hole_volume.vertices = [isosurface_of_hole_volume.vertices; isosurface_of_hole_caps.vertices];
-isosurface_of_hole_volume.faces = [isosurface_of_hole_volume.faces; isosurface_of_hole_caps.faces + length(isosurface_of_hole_wall.vertices(:,1))];
+isosurface_of_hole_volume.faces = [isosurface_of_hole_volume.faces; ...
+    isosurface_of_hole_caps.faces + length(isosurface_of_hole_wall.vertices(:,1))];
 
 
 % isosurface_of_hole_volume = isosurface(final_hole_volume,.5);

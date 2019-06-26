@@ -1,12 +1,12 @@
 function optimarea = optimizeRotationMaxArea(AxisandRot)
 
-            global Filtered_image_array;
+            global FILTERED_IMAGE_ARRAY;
           %  global fig;
 
 %global BoneProjection;
 %global HoleProjection;
 
-imgDataDBROT1 = double(imrotate3(Filtered_image_array,int8(AxisandRot(1)),[0 1 0]));
+imgDataDBROT1 = double(imrotate3(FILTERED_IMAGE_ARRAY,int8(AxisandRot(1)),[0 1 0]));
             imgDataDBROT3 = double(imrotate3(imgDataDBROT1 ,int8(AxisandRot(2)),[1 0 0]));
 %imgDataDBROT3 = double(imrotate3(imgDataDBROT2 ,int8(AxisandRot(3)),[1 0 0],'crop'));
 
