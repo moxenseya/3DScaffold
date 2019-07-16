@@ -1,34 +1,3 @@
-global RAW_IMAGE_ARRAY;
-global IMAGE_ARRAY_DOWNSIZED;
-global FILTER_FLAG;
-global FILTERED_IMAGE_ARRAY;
-global FULL_IMAGE_ARRAY_FILTERED;
-global BONE_PROJECTION;
-global HOLE_PROJECTION;
-global IMG_DATA_DB_ROT3;
-global IMG_DATA_DB_ROT3_FULL;
-global THICKNESS_ESTIMATE;
-
-
-%global IMG_DATA_DB_ROT3_FULL;
-%global FILTERED_IMAGE_ARRAY;
-%global FULL_IMAGE_ARRAY_FILTERED;
-%global FILTER_FLAG;
-%global RAW_IMAGE_ARRAY;
-%global IMG_DATA_DB_ROT3;
-%global THICKNESS_ESTIMATE;
-%global IMG_DATA_DB_ROT3_FULL;
-%global IMG_DATA_DB_ROT3;
-%global RAW_IMAGE_ARRAY;
-%global SLICE_SLIDER_VALUE;
-%global FILTER_FLAG;
-%global RAW_WINDOW;
-%global IMAGE_ARRAY_DOWNSIZED;
-%global FILTER_WINDOW;
-
-
-%Step 1: Image Acquisition
-diary Execution_Log.txt
 diary on
 
 
@@ -36,8 +5,10 @@ Input_directory_path = uigetdir(pwd,'Select folder containing CT-Scan Slices');
 Input_directory = dir(strcat(Input_directory_path, '\*.TIF'));
 
 disp (['Selected directory is: ', Input_directory_path]);
+Selected directory is: C:\Users\syeda\Desktop\3DScaffold\Datasets\Taha_3D print_1-1
 
 disp(['Input Directory has ', num2str(length(Input_directory)), ' Slices']);
+Input Directory has 344 Slices
 
 %%% Initialize the array using zeros based on the size of the images.
 
@@ -53,6 +24,7 @@ temp =imread(strcat(relativepath(Input_directory_path), FileName));
 RAW_IMAGE_ARRAY = zeros(size(temp,1),size(temp,2), length(Input_directory));
 
 disp('Creating slices volume... ');
+Creating slices volume... 
 
 
 %d = uiprogressdlg(app.ScaffoldUIFigure,'Title','Please Wait',...
@@ -68,6 +40,7 @@ for i=1:length(Input_directory)
 end
 %d.close();
 disp('Slices volume created successfully!');
+Slices volume created successfully!
 
 
 
@@ -116,6 +89,7 @@ FILTERED_IMAGE_ARRAY = IMAGE_ARRAY_DOWNSIZED;
 % if(app.BinaryThresholdingCheckBox.Value ==1)
     %%% Applying binary thresholding
     disp('Applying Binary Thresholding... ');
+Applying Binary Thresholding... 
     
     level = 255*graythresh(IMAGE_ARRAY_DOWNSIZED(:)./255);
     
@@ -132,6 +106,7 @@ FILTERED_IMAGE_ARRAY = IMAGE_ARRAY_DOWNSIZED;
 % if(app.ConnectedComponentsCheckBox.Value ==1)
     %%% Finding largest connected components and storing it in the array
     disp('Finding Lagest Connected Component... ');
+Finding Lagest Connected Component... 
     
     Connected_Components = bwconncomp(FILTERED_IMAGE_ARRAY);
     largestCompIndex = 0;
@@ -156,6 +131,7 @@ FILTERED_IMAGE_ARRAY = IMAGE_ARRAY_DOWNSIZED;
 % d.close();
 % FILTER_WINDOW = imshow(FILTERED_IMAGE_ARRAY(:,:,int64(SLICE_SLIDER_VALUE)),[],'Parent',app.UIFilter);
 disp('Bone volume pre-processed successfully!');
+Bone volume pre-processed successfully!
 FILTER_FLAG =1;
 %%% We saved the above array here in previous script, make it work without it(todo)
 
@@ -187,11 +163,13 @@ FILTER_FLAG =1;
 
 % [rotationresult,functionvalue] =simulannealbnd(@optimizeRotationMaxArea,(10*rand(1,3)),app.LowerBoundforangleEditField.Value,app.UpperBoundforangleEditField.Value, options);
 [rotationresult,functionvalue] =simulannealbnd(@optimizeRotationMaxArea,(10*rand(1,2)),-10,10,options);
+Stop requested.
 
 %Save the figure here, then close it
 close all
 
 disp(['Optimization completed successfully! The optimal angles are (ZYX): ',num2str(rotationresult), ' with an area of ', num2str(abs(functionvalue)) , ' units']);
+Optimization completed successfully! The optimal angles are (ZYX): 8.1472      9.0579 with an area of 59437 units
 % d.close();
 
 %%% Plug in the rotationresult values into the rotation values below (todo)
@@ -237,6 +215,7 @@ IMG_DATA_DB_ROT3_FULL = double(imrotate3(imgDataDBROT1 ,int8(rotationresult(2)),
 
 
 disp('Rotation completed!');
+Rotation completed!
 
 
 
@@ -255,6 +234,8 @@ else
     disp('Output folder created!');
     
 end
+No output folder found, creating folder now... 
+Output folder created!
 
 
 
@@ -304,6 +285,8 @@ binIntersection = binary_hole_dilated&binary_sum_projection;
 
 sum_projection=sum(IMG_DATA_DB_ROT3_FULL,3);
 disp(size(IMG_DATA_DB_ROT3_FULL))
+        1088        1062         639
+
 % figure, imshow(IMG_DATA_DB_ROT3_FULL(:,:,150),[])
 % if(app.UseLocalFractureSiteButton.Value == true)
 %     
@@ -350,8 +333,10 @@ for i=1:round(final_thickness)
 end
 
 disp('Scaffold volume created!');
+Scaffold volume created!
 
 disp('Creating isosurface of scaffold... ');
+Creating isosurface of scaffold... 
 
 %figure, imshow(final_hole_volume(:,:,20),[])
 
@@ -369,17 +354,21 @@ isosurface_of_hole_volume.faces = [isosurface_of_hole_volume.faces; isosurface_o
 
 %%% Test if patch conversion is needed or not (todo)
 disp('Isosurface created successfully!');
+Isosurface created successfully!
 
 disp('Writing scaffold volume to disk... ');
+Writing scaffold volume to disk... 
 
 % d = uiprogressdlg(app.ScaffoldUIFigure,'Title','Please Wait',...
 %     'Message','Writing scaffold volume to disk... ','Indeterminate','on');
 
 
 stlwrite('..\STL_Outputs\scaffold_volume.stl',isosurface_of_hole_volume);
+Wrote 3 faces
 % d.close();
 
 disp('Scaffold STL written to disk! Find it in STL_Outputs Folder!');
+Scaffold STL written to disk! Find it in STL_Outputs Folder!
 % uialert(app.ScaffoldUIFigure,'Scaffold STL written to disk! Find it in STL_Outputs Folder!','Scaffold STL Created!','Icon','success');
 
 diary off

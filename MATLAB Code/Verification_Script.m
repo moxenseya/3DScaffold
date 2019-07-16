@@ -25,32 +25,32 @@ diskImg =imread(strcat(relativepath(Input_directory_path), FileName));
 diskImg=diskImg(:,:,1);
 
 global final_hole_volume
-final_hole_volume=zeros(size(diskImg,1), size(diskImg, 2), round(ceil(50)));
+final_hole_volume=zeros(size(diskImg,1), size(diskImg, 2), round(ceil(150)));
 
 %Step 2: Repeatedly copy and put the image into this volume with imfills
-for i=1:round(50)
+for i=50:round(100)
     %final_hole_volume(:,:,i)=imfill(diskImg,'holes');
     final_hole_volume(:,:,i)=diskImg;
 end
 
 %Step 3: For an example, see the figure at end points and middle
-imshow(final_hole_volume(:,:,50))
+imshow(final_hole_volume(:,:,100))
 
 
 
 
 %Step 4: Apply a rotation to the volume
 
-ROTATION_Y=3;
+ROTATION_Y=45;
 
 
 final_hole_volume_rotated = double(imrotate3(final_hole_volume,int8(ROTATION_Y),[0 1 0]));
-imshow(final_hole_volume_rotated(:,:,50))
+imshow(final_hole_volume_rotated(:,:,30))
 
 
 %Step 5: Apply Optimization to restore rotation 
 
-    options=optimoptions('simulannealbnd','MaxIterations', 100,'PlotFcns',...
+    options=optimoptions('simulannealbnd','MaxIterations', 10,'PlotFcns',...
         {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
 
     
