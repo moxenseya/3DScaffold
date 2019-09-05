@@ -76,23 +76,23 @@ subplot(223), imshow(mean(final_hole_volume,3),[]);title('Original Volume');
     
     [rotationresult,functionvalue] =simulannealbnd(@OptimizeArea_Verification,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsSA);
 
+    optionsSO=optimoptions('surrogateopt','PlotFcns',...
+        {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
+    
+  [rotationresultSO, functionvalueSO] =  surrogateopt(@OptimizeArea_Verification,(ROTATION_Y-10),(ROTATION_Y+10));    
+
+      
+  optionsPSW=optimoptions('particleswarm','MaxIterations', 10,'Display','iter','PlotFcn','pswplotbestf');
+    
+  [rotationresultPSW, functionvaluePSW] =  particleswarm(@OptimizeArea_Verification,2,(ROTATION_Y-10),(ROTATION_Y+10));    
+
+    
+%Optimizers below this comment need to be fixed    
 optionsPS=optimoptions('patternsearch','MaxIterations', 10,'PlotFcns',...
         {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
     
   [rotationresultPS, functionvaluePS] =  patternsearch(@OptimizeArea_Verification,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsPS);    
     
 
-  optionsSO=optimoptions('surrogateopt','PlotFcns',...
-        {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
-    
-  [rotationresultSO, functionvalueSO] =  surrogateopt(@OptimizeArea_Verification,(ROTATION_Y-10),(ROTATION_Y+10));    
-
-
-  
-  optionsPSW=optimoptions('particleswarm','MaxIterations', 10,'PlotFcns',...
-        {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
-    
-  [rotationresultPSW, functionvaluePSW] =  particleswarm(@OptimizeArea_Verification,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsPSW);    
-
-    
+ 
     
