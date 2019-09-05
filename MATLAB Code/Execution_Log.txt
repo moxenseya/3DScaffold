@@ -372,3 +372,19 @@ Scaffold STL written to disk! Find it in STL_Outputs Folder!
 % uialert(app.ScaffoldUIFigure,'Scaffold STL written to disk! Find it in STL_Outputs Folder!','Scaffold STL Created!','Icon','success');
 
 diary off
+Selected directory is: C:\Users\syeda\Desktop\Thesis Work\CT Scan Data\Taha_3D print_1-1\Taha_3D print_1-1
+Input Directory has 344 Slices
+Creating slices volume... 
+Slices volume created successfully!
+Applying Binary Thresholding... 
+Finding Lagest Connected Component... 
+Bone volume pre-processed successfully!
+<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019a\toolbox\shared\optimlib\optimoptions.m',77,1)">77  </a>if nargin == 0
+if system_dependent('IsDebugMode')==1, dbquit; end
+Selected directory is: C:\Users\syeda\Desktop\3DScaffold\Verification_Disk
+Disk_Verification.TIF
+clc
+Selected directory is: C:\Users\syeda\Desktop\3DScaffold\Verification_Disk
+Disk_Verification.TIF
+Selected directory is: C:\Users\syeda\Desktop\3DScaffold\Verification_Disk
+Disk_Verification.TIF

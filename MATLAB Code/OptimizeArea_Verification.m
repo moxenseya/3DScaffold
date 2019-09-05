@@ -1,12 +1,12 @@
 function optimarea = OptimizeArea_Verification(AxisandRot)
 
-global final_hole_volume;
+global final_hole_volume_rotated;
           %  global fig;
 
 %global BoneProjection;
 %global HoleProjection;
 
-imgDataDBROT1 = double(imrotate3(final_hole_volume,int8(AxisandRot(1)),[0 1 0]));
+imgDataDBROT1 = double(imrotate3(final_hole_volume_rotated,int8(AxisandRot(1)),[0 1 0]));
             %imgDataDBROT3 = double(imrotate3(imgDataDBROT1 ,int8(AxisandRot(2)),[1 0 0]));
 %imgDataDBROT3 = double(imrotate3(imgDataDBROT2 ,int8(AxisandRot(3)),[1 0 0],'crop'));
 
