@@ -22,7 +22,7 @@ FileName=Input_directory(1).name;
 temp2 =imread(strcat(relativepath(Input_directory_path), FileName));
 disp (FileName)
 diskImg =imread(strcat(relativepath(Input_directory_path), FileName));
-diskImg=diskImg(:,:,1);
+diskImg=diskImg(1:2:end,1:2:end,1);
 
 global final_hole_volume
 final_hole_volume=zeros(size(diskImg,1), size(diskImg, 2), round(ceil(150)));
