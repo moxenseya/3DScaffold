@@ -45,7 +45,7 @@ imshow(final_hole_volume(:,:,100))
 
 %Step 4: Apply a rotation to the volume
 %%
-ROTATION_Y=45;
+ROTATION_Y=65;
 
 global final_hole_volume_rotated
 
@@ -67,31 +67,32 @@ figure,
 subplot(221), imshow(sum_projection,[]);title('Rotated Volume');
 subplot(222), imshow(difference,[]);title('Extracted shape');
 subplot(223), imshow(mean(final_hole_volume,3),[]);title('Original Volume');
+
 %Step 5: Apply Optimization to restore rotation 
 %%
     optionsSA=optimoptions('simulannealbnd','MaxIterations', 10,'PlotFcns',...
         {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
 
     
-    [rotationresult,functionvalue] =simulannealbnd(@OptimizeArea_Verification,(10*rand(1,1)),-10,10,optionsSA);
+    [rotationresult,functionvalue] =simulannealbnd(@OptimizeArea_Verification,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsSA);
 
 optionsPS=optimoptions('patternsearch','MaxIterations', 10,'PlotFcns',...
         {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
     
-  [rotationresultPS, functionvaluePS] =  patternsearch(@OptimizeArea_Verification,(10*rand(1,1)),-10,10,optionsPS);    
+  [rotationresultPS, functionvaluePS] =  patternsearch(@OptimizeArea_Verification,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsPS);    
     
 
   optionsSO=optimoptions('surrogateopt','PlotFcns',...
         {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
     
-  [rotationresultSO, functionvalueSO] =  surrogateopt(@OptimizeArea_Verification,-10,10);    
+  [rotationresultSO, functionvalueSO] =  surrogateopt(@OptimizeArea_Verification,(ROTATION_Y-10),(ROTATION_Y+10));    
 
 
   
   optionsPSW=optimoptions('particleswarm','MaxIterations', 10,'PlotFcns',...
         {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
     
-  [rotationresultPSW, functionvaluePSW] =  particleswarm(@OptimizeArea_Verification,(10*rand(1,1)),-10,10,optionsPSW);    
+  [rotationresultPSW, functionvaluePSW] =  particleswarm(@OptimizeArea_Verification,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsPSW);    
 
     
     
