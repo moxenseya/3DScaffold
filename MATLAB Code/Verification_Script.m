@@ -45,7 +45,7 @@ imshow(final_hole_volume(:,:,100))
 
 %Step 4: Apply a rotation to the volume
 %%
-ROTATION_Y=-20;
+ROTATION_Y=0;
 
 global final_hole_volume_rotated
 
