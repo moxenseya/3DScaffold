@@ -18,7 +18,7 @@ Xvalues = zeros(size(areavalue));
 Yvalues = zeros(size(areavalue));
 for rotX = LB:1:UB
    for rotY = LB:1:UB
-      areavalue((rotX+UB+1),(rotY+UB+1))= OptimizeArea_Verification([rotX,rotY,1]);
+      areavalue((rotX+UB+1),(rotY+UB+1))= OptimizeArea_VerificationXY([rotX,rotY,1]);
       Xvalues((rotX+UB+1),(rotY+UB+1))= rotY;
       Yvalues((rotX+UB+1),(rotY+UB+1))= rotY;
       disp(['iteration ', num2str(rotX+UB+1), ' ', num2str(rotY+UB+1)]);
