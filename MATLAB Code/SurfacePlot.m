@@ -4,7 +4,7 @@
 %values are symmetric around 0, the program calculates the dimesions
 %automatically.
 
-UB=25;
+UB=5;
 
 LB=-UB;
 DIM = (UB*2)+1;

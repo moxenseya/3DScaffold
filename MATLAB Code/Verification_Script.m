@@ -78,24 +78,24 @@ subplot(223), imshow(mean(final_hole_volume,3),[]);title('Original Volume');
         {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
 
     
-    [rotationresult,functionvalue] =simulannealbnd(@OptimizeArea_Verification,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsSA);
+    [rotationresult,functionvalue] =simulannealbnd(@OptimizeArea_VerificationY,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsSA);
 
     optionsSO=optimoptions('surrogateopt','PlotFcns',...
         {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
     
-  [rotationresultSO, functionvalueSO] =  surrogateopt(@OptimizeArea_Verification,(ROTATION_Y-10),(ROTATION_Y+10));    
+  [rotationresultSO, functionvalueSO] =  surrogateopt(@OptimizeArea_VerificationY,(ROTATION_Y-10),(ROTATION_Y+10));    
 
       
   optionsPSW=optimoptions('particleswarm','MaxIterations', 10,'Display','iter','PlotFcn','pswplotbestf');
     
-  [rotationresultPSW, functionvaluePSW] =  particleswarm(@OptimizeArea_Verification,2,(ROTATION_Y-10),(ROTATION_Y+10));    
+  [rotationresultPSW, functionvaluePSW] =  particleswarm(@OptimizeArea_VerificationY,2,(ROTATION_Y-10),(ROTATION_Y+10));    
 
     
 %Optimizers below this comment need to be fixed    
 optionsPS=optimoptions('patternsearch','MaxIterations', 10,'PlotFcns',...
         {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
     
-  [rotationresultPS, functionvaluePS] =  patternsearch(@OptimizeArea_Verification,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsPS);    
+  [rotationresultPS, functionvaluePS] =  patternsearch(@OptimizeArea_VerificationY,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsPS);    
     
 
  
