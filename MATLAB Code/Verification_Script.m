@@ -47,12 +47,22 @@ imshow(final_hole_volume(:,:,105))
 
 %Step 4: Apply a rotation to the volume
 %%
-ROTATION_Y=0;
+ROTATION_X=10;
+ROTATION_Y=20;
 
 global final_hole_volume_rotated
+if(ROTATION_X~=0)
+    final_hole_volume_rotated = double(imrotate3(final_hole_volume,int8(ROTATION_X),[1 0 0],'loose'));
+end
+if(ROTATION_Y~=0)
+    final_hole_volume_rotated = double(imrotate3(final_hole_volume,int8(ROTATION_Y),[0 1 0],'loose'));
+end
 
-final_hole_vdolume_rotated = double(imrotate3(final_hole_volume,int8(ROTATION_Y),[0 1 0],'loose'));
 imshow(final_hole_volume_rotated(:,:,105))
+
+
+
+
 
 %%
 %Test Section : Checking to see if we have a proper fill and hole
@@ -78,7 +88,9 @@ subplot(223), imshow(mean(final_hole_volume,3),[]);title('Original Volume');
         {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
 
     
-    [rotationresult,functionvalue] =simulannealbnd(@OptimizeArea_VerificationY,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsSA);
+    [rotationresultXY,functionvalueXY] =simulannealbnd(@OptimizeArea_VerificationXY,(10*rand(1,2)),(-(ROTATION_X+ROTATION_Y)-10),((ROTATION_X+ROTATION_Y)+10),optionsSA);
+    [rotationresultX,functionvalueX] =simulannealbnd(@OptimizeArea_VerificationX,(10*rand(1,1)),(ROTATION_X-10),(ROTATION_X+10),optionsSA);
+    [rotationresultY,functionvalueY] =simulannealbnd(@OptimizeArea_VerificationY,(10*rand(1,1)),(ROTATION_Y-10),(ROTATION_Y+10),optionsSA);
 
     optionsSO=optimoptions('surrogateopt','PlotFcns',...
         {@saplotbestx,@saplotbestf,@saplotx,@saplotf});
