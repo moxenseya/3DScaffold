@@ -7,7 +7,7 @@
 %Input_directory = dir(strcat(Input_directory_path, '\Disk_Verification.TIF'));
 
 Input_directory = dir('C:\Users\Abrar\Desktop\3DScaffold\Datasets\Disk_Verification.TIF');
-
+Input_directory_path= ('C:\Users\Abrar\Desktop\3DScaffold\Datasets\');
 %disp (['Selected directory is: ', Input_directory_path]);
 
 
@@ -40,7 +40,7 @@ end
 %Step 3: For an example, see the figure at end points and middle
 
 %%
-imshow(final_hole_volume(:,:,100))
+imshow(final_hole_volume(:,:,105))
 
 
 
@@ -51,8 +51,8 @@ ROTATION_Y=0;
 
 global final_hole_volume_rotated
 
-final_hole_volume_rotated = double(imrotate3(final_hole_volume,int8(ROTATION_Y),[0 1 0],'loose'));
-imshow(final_hole_volume_rotated(:,:,75))
+final_hole_vdolume_rotated = double(imrotate3(final_hole_volume,int8(ROTATION_Y),[0 1 0],'loose'));
+imshow(final_hole_volume_rotated(:,:,105))
 
 %%
 %Test Section : Checking to see if we have a proper fill and hole
