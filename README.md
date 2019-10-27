@@ -23,9 +23,9 @@ The original technical paper for this work will be available soon.
 
 |                <a href="https://github.com/moxenseya" target="_blank">**Abrar Hussain Syed**</a>                |       <a href="https://www.linkedin.com/in/abaghaie/" target="_blank">**Ahmadreza Baghaie**</a>       |         <a href="https://www.researchgate.net/profile/Azhar_Ilyas" target="_blank">**Azhar Ilyas**</a>          |
 | :----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
-| [![Abrar Hussain Syed](https://avatars1.githubusercontent.com/u/18294827?s=200)](https://github.com/RajendraBhagroo) |                  [![Chris](LINK)](https://github.com/gint0kix)                  |                    [![Kim](LINK)](https://github.com/Gold-Turtle)                     |
+| [![Abrar Hussain Syed](https://moxenseya.me/img/Face1.jpg?)](https://github.com/RajendraBhagroo) |                  [![Chris](LINK)](https://github.com/gint0kix)                  |                    [![Kim](LINK)](https://github.com/Gold-Turtle)                     |
 |           <a href="https://github.com/RajendraBhagroo" target="_blank">`github.com/RajendraBhagroo`</a>            | <a href="https://github.com/gint0kix" target="_blank">`github.com/gint0kix`</a> | <a href="https://github.com/Gold-Turtle" target="_blank">`github.com/Gold-Turtle`</a> |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIwOTc3NjE1LC0xNzk1NzYyMzUxLC0xND
-c4NjMyMTc3LC0yOTk1OTgsMTYxNzQzNjg0OF19
+eyJoaXN0b3J5IjpbLTYyMzc5NTM4MSwtMTc5NTc2MjM1MSwtMT
+Q3ODYzMjE3NywtMjk5NTk4LDE2MTc0MzY4NDhdfQ==
 -->
