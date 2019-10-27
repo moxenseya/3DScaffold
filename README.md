@@ -18,7 +18,14 @@ This program can be run two ways:
 ### Documentation
 
 The original technical paper for this work will be available soon.
+
+## Team
+
+|                <a href="https://github.com/moxenseya" target="_blank">**Abrar Hussain Syed**</a>                |       <a href="https://github.com/gint0kix" target="_blank">**Chris**</a>       |         <a href="https://github.com/Gold-Turtle" target="_blank">**Kim**</a>          |
+| :----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
+| [![Rajendra Bhagroo](https://avatars1.githubusercontent.com/u/18294827?s=200)](https://github.com/RajendraBhagroo) |                  [![Chris](LINK)](https://github.com/gint0kix)                  |                    [![Kim](LINK)](https://github.com/Gold-Turtle)                     |
+|           <a href="https://github.com/RajendraBhagroo" target="_blank">`github.com/RajendraBhagroo`</a>            | <a href="https://github.com/gint0kix" target="_blank">`github.com/gint0kix`</a> | <a href="https://github.com/Gold-Turtle" target="_blank">`github.com/Gold-Turtle`</a> |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjAzMzczMDYsLTE0Nzg2MzIxNzcsLT
+eyJoaXN0b3J5IjpbLTEyNTA0MzU3NzcsLTE0Nzg2MzIxNzcsLT
 I5OTU5OCwxNjE3NDM2ODQ4XX0=
 -->
