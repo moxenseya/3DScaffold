@@ -9,7 +9,10 @@ This program was created using MATLAB 2018a and the Global Optimization Toolbox.
 This program can be run two ways:
 - Fully automated script. - **ProjectionScript.m**
 - Using the provided GUI app. - **ProjectionApplication.mlapp**
+### Documentation
 
+The original technical paper for this work will be available soon.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5OTU5OCwxNjE3NDM2ODQ4XX0=
+eyJoaXN0b3J5IjpbLTE0Nzg2MzIxNzcsLTI5OTU5OCwxNjE3ND
+M2ODQ4XX0=
 -->
