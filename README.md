@@ -13,7 +13,10 @@ This program was created using MATLAB 2018a and the Global Optimization Toolbox.
 
 This program can be run two ways:
 - Fully automated script. - **ProjectionScript.m**
+	Navigate to the directory containing the scripts and run `projectionscript.m` in the MATLAB console.
 - Using the provided GUI app. - **ProjectionApplication.mlapp**
+	Run the `ProjectionApplication.mlapp` in the MATLAB console to launch the app and 
+![enter image description here](https://i.imgur.com/ZF78LQM.png)
 
 ### Documentation
 
@@ -26,6 +29,6 @@ The original technical paper for this work will be available soon.
 | ![Moxenseya](https://i.imgur.com/HgH0XPN.jpg) |                  ![Abaghaie](https://i.imgur.com/bEVInJn.jpg)|                    ![Ailyas](https://i.imgur.com/GgbcSGE.jpg) 
             
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDk2NDAzMCwtMTc5NTc2MjM1MSwtMT
-Q3ODYzMjE3NywtMjk5NTk4LDE2MTc0MzY4NDhdfQ==
+eyJoaXN0b3J5IjpbLTExOTYxNDkwNDMsLTE3OTU3NjIzNTEsLT
+E0Nzg2MzIxNzcsLTI5OTU5OCwxNjE3NDM2ODQ4XX0=
 -->
