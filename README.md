@@ -6,8 +6,10 @@ This program requires MATLAB and the Global Optimization Toolbox.
 
 ### Usage
 
-This program can be run two ways a fully automated script, or using the provided GUI app.
+This program can be run two ways:
+- Fully automated script. - **ProjectionScript.m**
+- Using the provided GUI app. - **.m**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODY4OTU0ODUsMTYxNzQzNjg0OF19
+eyJoaXN0b3J5IjpbLTYyNTI2OTc3OSwxNjE3NDM2ODQ4XX0=
 -->
