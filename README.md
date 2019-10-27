@@ -14,7 +14,7 @@ This program was created using MATLAB 2018a and the Global Optimization Toolbox.
 This program can be run two ways:
 - Fully automated script. - **ProjectionScript.m**
 - Using the provided GUI app. - **ProjectionApplication.mlapp**
-- 
+
 ### Documentation
 
 The original technical paper for this work will be available soon.
@@ -23,9 +23,9 @@ The original technical paper for this work will be available soon.
 
 |                <a href="https://github.com/moxenseya" target="_blank">**Abrar Hussain Syed**</a>                |       <a href="https://www.linkedin.com/in/abaghaie/" target="_blank">**Dr. Ahmadreza Baghaie**</a>       |         <a href="https://www.researchgate.net/profile/Azhar_Ilyas" target="_blank">**Dr. Azhar Ilyas**</a>          |
 | :----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
-| ![Moxenseya](https://moxenseya.me/img/Face1.jpg) |                  ![Abaghaie](https://i.imgur.com/bEVInJn.jpg)|                    ![Ailyas](https://i.imgur.com/GgbcSGE.jpg) 
+| ![Moxenseya](https://i.imgur.com/HgH0XPN.jpg) |                  ![Abaghaie](https://i.imgur.com/bEVInJn.jpg)|                    ![Ailyas](https://i.imgur.com/GgbcSGE.jpg) 
             
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM1MzI3MDg5LC0xNzk1NzYyMzUxLC0xND
-c4NjMyMTc3LC0yOTk1OTgsMTYxNzQzNjg0OF19
+eyJoaXN0b3J5IjpbLTE0NDk2NDAzMCwtMTc5NTc2MjM1MSwtMT
+Q3ODYzMjE3NywtMjk5NTk4LDE2MTc0MzY4NDhdfQ==
 -->
