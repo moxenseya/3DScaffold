@@ -7,9 +7,6 @@ Bone tissues in critical-size bone fractures, do not regenerate naturally and re
 |<img src="https://i.imgur.com/AWQE0vJ.png" alt="workflow" width="350"> | <img src="https://i.imgur.com/2RhLnXO.jpg" alt="workflow" width="350"> |
 
 
-
-
-
 ### Requirements
 This program was created using MATLAB 2018a and the Global Optimization Toolbox. Please make sure you have the same version or higher installed on your machine.
 
@@ -35,7 +32,7 @@ The original technical paper for this work will be available soon.
 | ![Moxenseya](https://i.imgur.com/HgH0XPN.jpg) |                  ![Abaghaie](https://i.imgur.com/bEVInJn.jpg)|                    ![Ailyas](https://i.imgur.com/GgbcSGE.jpg) 
 | Research Assistant | Co-Advisor | Author/ Co-Advisor
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NjEyNTkyOSwtMTczNjkxNTM3NiwxMj
+eyJoaXN0b3J5IjpbLTE5MzQ5MTg1MywtMTczNjkxNTM3NiwxMj
 Q4MDI3Nzk4LDI0NTQxOTE2MiwtMTc5NTc2MjM1MSwtMTQ3ODYz
 MjE3NywtMjk5NTk4LDE2MTc0MzY4NDhdfQ==
 -->
