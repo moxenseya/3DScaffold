@@ -19,13 +19,13 @@ This program can be run two ways:
 
 The original technical paper for this work will be available soon.
 
-## Team
+## Research Team
 
-|                <a href="https://github.com/moxenseya" target="_blank">**Abrar Hussain Syed**</a>                |       <a href="https://www.linkedin.com/in/abaghaie/" target="_blank">**Ahmadreza Baghaie**</a>       |         <a href="https://www.researchgate.net/profile/Azhar_Ilyas" target="_blank">**Azhar Ilyas**</a>          |
+|                <a href="https://github.com/moxenseya" target="_blank">**Abrar Hussain Syed**</a>                |       <a href="https://www.linkedin.com/in/abaghaie/" target="_blank">**Dr. Ahmadreza Baghaie**</a>       |         <a href="https://www.researchgate.net/profile/Azhar_Ilyas" target="_blank">**Dr. Azhar Ilyas**</a>          |
 | :----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
-| [![Abrar Hussain Syed](https://moxenseya.me/img/Face1.jpg) |                  ![Abaghaie](https://media.licdn.com/dms/image/C4E03AQHTlW3tNj-m5Q/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=Eal41oAW0KUdQmtzJraA1-x4Z8b__uCmMsUhVzlxtA4)|                    ![Azhar Ilyas](https://www.dentistrytoday.com/media/k2/items/cache/55d4420dd6cd56f2e756dd2f75804f62_XL.jpg) 
+| ![Abrar Hussain Syed](https://moxenseya.me/img/Face1.jpg) |                  ![Abaghaie](https://media.licdn.com/dms/image/C4E03AQHTlW3tNj-m5Q/profile-displayphoto-shrink_800_800/0?e=1577923200&v=beta&t=Eal41oAW0KUdQmtzJraA1-x4Z8b__uCmMsUhVzlxtA4)|                    ![Azhar Ilyas](https://www.dentistrytoday.com/media/k2/items/cache/55d4420dd6cd56f2e756dd2f75804f62_XL.jpg) 
             
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNzg1NjczNywtMTc5NTc2MjM1MSwtMT
-Q3ODYzMjE3NywtMjk5NTk4LDE2MTc0MzY4NDhdfQ==
+eyJoaXN0b3J5IjpbLTE5ODc1NDU3MzcsLTE3OTU3NjIzNTEsLT
+E0Nzg2MzIxNzcsLTI5OTU5OCwxNjE3NDM2ODQ4XX0=
 -->
