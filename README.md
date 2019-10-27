@@ -30,10 +30,10 @@ The original technical paper for this work will be available soon.
 
 |                <a href="https://github.com/moxenseya" target="_blank">**Abrar Hussain Syed**</a>                |       <a href="https://www.linkedin.com/in/abaghaie/" target="_blank">**Dr. Ahmadreza Baghaie**</a>       |         <a href="https://www.researchgate.net/profile/Azhar_Ilyas" target="_blank">**Dr. Azhar Ilyas**</a>          |
 | :----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
-| ![Moxenseya](https://i.imgur.com/HgH0XPN.jpg) |                  ![Abaghaie](https://i.imgur.com/bEVInJn.jpg)|                    ![Ailyas](https://i.imgur.com/GgbcSGE.jpg) 
-| Research Assistant | Co-Advisor | Co-Advisor
+| ![Moxenseya](https://i.imgur.com/HgH0XPN.jpg) |                  ![Abaghaie](https://i.imgur.com/bEVInJn.jpg)|                    ![Ailyas](https://i.imgur.com/FQyyirJ.jpg) 
+| Research Assistant | Co-Advisor | Advisor
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODA3OTA5NDIsLTE3MzY5MTUzNzYsMT
-I0ODAyNzc5OCwyNDU0MTkxNjIsLTE3OTU3NjIzNTEsLTE0Nzg2
-MzIxNzcsLTI5OTU5OCwxNjE3NDM2ODQ4XX0=
+eyJoaXN0b3J5IjpbMzYwNTg0MDg5LC0xOTgwNzkwOTQyLC0xNz
+M2OTE1Mzc2LDEyNDgwMjc3OTgsMjQ1NDE5MTYyLC0xNzk1NzYy
+MzUxLC0xNDc4NjMyMTc3LC0yOTk1OTgsMTYxNzQzNjg0OF19
 -->
