@@ -27,8 +27,8 @@ The original technical paper for this work will be available soon.
 |                <a href="https://github.com/moxenseya" target="_blank">**Abrar Hussain Syed**</a>                |       <a href="https://www.linkedin.com/in/abaghaie/" target="_blank">**Dr. Ahmadreza Baghaie**</a>       |         <a href="https://www.researchgate.net/profile/Azhar_Ilyas" target="_blank">**Dr. Azhar Ilyas**</a>          |
 | :----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | ![Moxenseya](https://i.imgur.com/HgH0XPN.jpg) |                  ![Abaghaie](https://i.imgur.com/bEVInJn.jpg)|                    ![Ailyas](https://i.imgur.com/GgbcSGE.jpg) 
-| Research Assistant | Co-Advisor | Author/Advisor
+| Research Assistant | Co-Advisor | Author/ Co - Advisor
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0ODk1MzE3MSwtMTc5NTc2MjM1MSwtMT
-Q3ODYzMjE3NywtMjk5NTk4LDE2MTc0MzY4NDhdfQ==
+eyJoaXN0b3J5IjpbMjQ1NDE5MTYyLC0xNzk1NzYyMzUxLC0xND
+c4NjMyMTc3LC0yOTk1OTgsMTYxNzQzNjg0OF19
 -->
