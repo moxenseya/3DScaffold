@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.io/moxenseya/https://githubcom/moxenseya/3DScaffold/.svg)](http://hits.dwyl.io/moxenseya/https://githubcom/moxenseya/3DScaffold/)
+
 # Automated Image Processing Based 3D Printed Scaffolds for Critical Size Bone Fracture Treatment
 
 ### Introduction
